@@ -33,7 +33,7 @@ Jobsuche bedeutet, Dutzende von Unternehmen, Kontakten, Dokumenten und Statusän
 
 ## 🖥️ Oberfläche
 
-[![▶️ Video ansehen](pic3.png)](./Personal-Hiring-Manager.mp4)
+![pic](pic1.png)
 
 ```
 ┌── Left Sidebar (resizable) ──┐ ┌── Application Detail ──────────┐ ┌── Right Tools (resizable) ───┐
@@ -69,7 +69,7 @@ Die rechten Bereiche (Motivation · Radar · Schnellzugriffe · Export · KI‑A
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Voraussetzungen
 
@@ -104,7 +104,7 @@ npm run dev
 
 ---
 
-## 📦 Tech Stack
+## Tech Stack
 
 | Layer     | Technologie                                                  |
 | --------- | ------------------------------------------------------------ |
@@ -118,7 +118,7 @@ npm run dev
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 src/
@@ -190,7 +190,7 @@ Das exportierte JSON enthält Metadaten zur Bewerbung, die komplette Timeline un
 
 ---
 
-## 🔒 Datenschutz
+## Datenschutz
 
 - **Keine Analysen**, keine Verfolgung, keine Telemetrie.
 - **Keine Netzwerkanfragen** außer den Quicklinks, die Sie explizit anklicken.
