@@ -61,11 +61,9 @@ Jobsuche bedeutet, Dutzende von Unternehmen, Kontakten, Dokumenten und Statusän
 
 Die rechten Bereiche (Motivation · Radar · Schnellzugriffe · Export · KI‑Analyse) sind einzeln **kollabierbar** (Pfeil‑Klick) und **höhenverstellbar** (Ziehen am unteren Rand, Doppelklick = Höhe zurücksetzen).
 
-<p align="center">
-    <img src="pic2.png" width="600"/>
-    <img src="pic3.png" width="600"/>
-    <img src="pic1.png" width="1000"/>
-<p>
+![pic](pic1.png)
+![pic](pic2.png)
+![pic](pic3.png)
 
 ---
 
