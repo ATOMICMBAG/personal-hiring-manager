@@ -2,7 +2,7 @@
 
 **Local. Datenschutz-first. Kostenlos.**
 
-Eine Desktop-Anwendung zur Verfolgung von Bewerbungen, die strukturiert, durchsuchbar und KI-bereit ist – vollständig lokal auf Ihrem Rechner.
+Eine Desktop-Anwendung zur Verfolgung von Bewerbungen, die strukturiert und durchsuchbar ist – vollständig lokal auf Ihrem Rechner.
 
 [![Next.js](https://img.shields.io/badge/Next.js-15.5-black?logo=next.js)](https://nextjs.org/)
 [![Prisma](https://img.shields.io/badge/Prisma-6.6-2D3748?logo=prisma)](https://www.prisma.io/)
@@ -21,18 +21,19 @@ Jobsuche bedeutet, Dutzende von Unternehmen, Kontakten, Dokumenten und Statusän
 
 - ✅ **100 % lokal** – Ihre Daten bleiben auf Ihrem Computer. Keine Konten, keine Cloud, keine Telemetrie.
 - ✅ **Ein-Screen-Workflow** – 3‑Panel‑Layout (Unternehmen · Bewerbungsdetail · Erkenntnisse) – alles auf einen Blick.
-- ✅ **Resizable & collapsible sidebars** – Ziehen Sie die Kanten, um die Breite anzupassen, klicken Sie, um Seitenleisten einzublenden/ausblenden. Höhen der einzelnen Abschnitte im rechten Panel sind unabhängig einstellbar und werden in `localStorage` gespeichert.
-- ✅ **Visuelle Timeline** – Sehen Sie exakt, wo jede Bewerbung steht, mit farblich kodierten Statusen.
-- ✅ **Dokumente: hochladen · öffnen · herunterladen · löschen** – Ziehen Sie Dateien in jede Bewerbung, then previewen Sie sie inline (PDFs im Browser) oder laden Sie sie mit einem Klick herunter.
-- ✅ **Markdown‑Notizen** – Halten Sie Anrufprotokolle, Vorbereitungsnotizen und Follow‑up‑Erinnerungen mit Tag‑Support.
+- ✅ **Resizable & collapsible sidebars** – Ziehe die Kanten, um die Breite anzupassen, klicken Sie, um Seitenleisten einzublenden/ausblenden. Höhen der einzelnen Abschnitte im rechten Panel sind unabhängig einstellbar und werden in `localStorage` gespeichert.
+- ✅ **Visuelle Timeline** – Sehe exakt, wo jede Bewerbung steht, mit farblich kodierten Statusen.
+- ✅ **Dokumente: hochladen · öffnen · herunterladen · löschen** – Dateien in jede Bewerbung, leichter Überblick der Wichtigen Punkte (PDFs im Browser) oder lade mit einem Klick herunter.
+- ✅ **Markdown‑Notizen** – Halte Anrufprotokolle, Vorbereitungsnotizen und Follow‑up‑Erinnerungen mit Tag‑Support.
 - ✅ **Bewerbungsradar** – Ein Mini‑Gantt‑Diagramm zeigt alle aktiven Bewerbungen auf einen Blick.
-- ✅ **KI‑bereite Exporte** – Kopieren Sie strukturiertes JSON oder exportieren Sie die Daten für Analysen mit Ihrem lokalen Edge‑Copilot.
-- ✅ **Open Source (MIT)** – Verwenden Sie es, teilen Sie es, modifizieren Sie es.
+- ✅ **JSON Exporte** – Strukturiertes JSON oder exportiere die Daten für Analysen.
+- ✅ **Open Source (MIT)** – Verwende es, teile es, modifiziere es.
 
 ---
 
 ## 🖥️ Oberfläche
 
+![pic](pic1.png)
 [![▶️ Video ansehen](Personal-Hiring-Manager.mp4)](Personal-Hiring-Manager.mp4)
 
 ```
@@ -59,9 +60,8 @@ Jobsuche bedeutet, Dutzende von Unternehmen, Kontakten, Dokumenten und Statusän
         [▣] Toggle in header                                              [▣] Toggle in header
 ```
 
-Die rechten Bereiche (Motivation · Radar · Schnellzugriffe · Export · KI‑Analyse) sind einzeln **kollabierbar** (Pfeil‑Klick) und **höhenverstellbar** (Ziehen am unteren Rand, Doppelklick = Höhe zurücksetzen).
+Die rechten Bereiche (Motivation · Radar · Schnellzugriffe · Export zur Analyse) sind einzeln **kollabierbar** (Pfeil‑Klick) und **höhenverstellbar** (Ziehen am unteren Rand, Doppelklick = Höhe zurücksetzen).
 
-![pic](pic1.png)
 ![pic](pic2.png)
 ![pic](pic3.png)
 
@@ -96,9 +96,9 @@ npm run db:seed      # (Optional) Füllt die DB mit Beispieldaten
 npm run dev
 ```
 
-Öffnen Sie [http://localhost:3000](http://localhost:3000) in Ihrem Browser.
+Öffne [http://localhost:3000](http://localhost:3000) in Ihrem Browser.
 
-> Die SQLite‑Datenbank liegt in `prisma/phm.db`. Sichern Sie sie wie jede andere Datei – das ist der gesamte Anwendungsstatus.
+> Die SQLite‑Datenbank liegt in `prisma/phm.db`. Sichere jede Datei – das ist der gesamte Anwendungsstatus.
 
 ---
 
@@ -173,12 +173,12 @@ prisma/
 
 ---
 
-## Exportiere JSON für weiter Verarbeitung oder direkte Webbrowser-Edge Copilot‑Interaktion
+## Exportiere JSON für weiter Verarbeitung oder z.B. direkt im Webbrowser-Edge Copilot‑Interaktion
 
-Die App enthält kein KI‑Modell – sie ist für die Nutzung Ihres lokalen **Webbrowser Edge Copilot** konzipiert. Oder **Exportiere als JSON** für weitere **lokale und sichere** Personelle Motivations Analyse.
+**Exportiere als JSON** für weitere **lokale und sichere** Personelle Analyse. Die App ist zusätzlich für die Nutzung im **Webbrowser Edge mit Copilot** konzipiert. Nutze die Webbrowser lese funktion fon Copilot Edge!
 
-- Klicken Sie auf **„Exportiere JSON“**, um dieselben Daten als Datei herunterzuladen.
-- Fragen Sie Ihren Copilot dann zum Beispiel:
+- Klicke auf **„Exportiere JSON“**, um dieselben Daten als Datei herunterzuladen.
+- Frage dein Edge Copilot im Webbrowser direkt an deiner Liste oder Unternehmens Akte. z.B.:
 
 > _„Analysiere meine Bewerbungsaktivität der letzten 14 Tage.“_  
 > _„Vergleiche meine Motivation über alle offenen Bewerbungen.“_  
@@ -191,8 +191,8 @@ Das exportierte JSON enthält Metadaten zur Bewerbung, die komplette Timeline un
 ## Datenschutz
 
 - **Keine Analysen**, keine Verfolgung, keine Telemetrie.
-- **Keine Netzwerkanfragen** außer den Quicklinks, die Sie explizit anklicken.
-- Die SQLite‑Datenbank (`prisma/phm.db`) und die hochgeladenen Dokumente (`prisma/uploads/`) bleiben auf Ihrem Rechner. Sichern, migrieren oder löschen Sie sie – Sie besitzen Ihre Daten.
+- **Keine Netzwerkanfragen** außer den Quicklinks, die explizit angeklick werden muss wenn du aus der box willst.
+- Die SQLite‑Datenbank (`prisma/phm.db`) und die hochgeladenen Dokumente (`prisma/uploads/`) bleiben auf Ihrem Rechner. Selber Sichern, migrieren oder löschen.
 
 ---
 
