@@ -1,0 +1,104 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-background: #ffffff;
+  --color-foreground: #000000;
+  --color-border: #e5e5e5;
+  --color-hover: #f5f5f5;
+  --color-shadow: rgba(0, 0, 0, 0.06);
+  --color-muted: #6b7280;
+  --color-accent: #1a1a1a;
+
+  /* Brand / Design System */
+  --color-brand: #19741d;
+  --color-brand-light: #d9ffd9;
+  --color-brand-lighter: #eaffea;
+  --color-brand-icon: #13a51a;
+
+  /* Status Colors */
+  --color-status-waiting: #f59e0b;
+  --color-status-processing: #3b82f6;
+  --color-status-interview: #22c55e;
+  --color-status-rejected: #ef4444;
+
+  /* Custom spacing for desktop-density UI */
+  --spacing-0_5: 0.125rem;
+  --spacing-1_5: 0.375rem;
+  --spacing-2_5: 0.625rem;
+  --spacing-3_5: 0.875rem;
+}
+
+/*
+ * WICHTIG: KEIN globaler "* { margin:0; padding:0 }" Reset mehr.
+ *
+ * Tailwind v4 legt alle Utility-Klassen (p-2, m-4, px-[8px], ...) in einen
+ * CSS Cascade Layer. Regeln *außerhalb* eines Layers schlagen Regeln *innerhalb*
+ * eines Layers IMMER (unabhängig von Spezifität). Ein globaler "*"-Reset wie
+ * "* { padding:0; margin:0 }" überschreibt deshalb sämtliche Tailwind padding /
+ * margin Utilities — was vorher dazu führte, dass z.B. "p-2" oder "p-[8px]"
+ * keine Wirkung hatte. Tailwind bringt mit "@import 'tailwindcss'" bereits sein
+ * eigenes, modernes Preflight (CSS-Reset) mit, ein zusätzlicher Reset ist nicht
+ * nötig. box-sizing kommt im base-Layer wieder rein, damit Utilities gewinnen.
+ */
+@layer base {
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+}
+
+html,
+body {
+  height: 100%;
+  background: #ffffff;
+  color: #000000;
+  font-family: "Inter", "Roboto", "Helvetica Neue", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Scrollbar – minimal, schwarz-weiss */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #d1d5db;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #9ca3af;
+}
+
+/* Smooth panel transitions */
+.panel-collapse {
+  transition:
+    width 200ms ease,
+    opacity 200ms ease,
+    padding 200ms ease;
+}
+
+/* Timeline dot animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.animate-fade-in-up {
+  animation: fadeInUp 300ms ease forwards;
+}
+
+/* Drag & drop highlight */
+.drag-over {
+  background: #f5f5f5;
+  border-color: #000000;
+}

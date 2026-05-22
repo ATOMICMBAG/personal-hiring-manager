@@ -1,0 +1,70 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = "file:./phm.db"
+}
+
+model Company {
+  id           String        @id @default(uuid())
+  name         String
+  industry     String?
+  website      String?
+  notes        String?
+  createdAt    DateTime      @default(now())
+  updatedAt    DateTime      @updatedAt
+  applications Application[]
+}
+
+model Application {
+  id           String          @id @default(uuid())
+  title        String
+  companyId    String
+  company      Company         @relation(fields: [companyId], references: [id], onDelete: Cascade)
+  contactName  String?
+  contactEmail String?
+  contactPhone String?
+  jobLink      String?
+  status       String          @default("Bewerbung gesendet")
+  deadline     DateTime?
+  etaDays      Int?
+  motivation   Int             @default(50)
+  createdAt    DateTime        @default(now())
+  updatedAt    DateTime        @updatedAt
+  timelineEvents TimelineEvent[]
+  documents    Document[]
+  notes        Note[]
+}
+
+model TimelineEvent {
+  id            String      @id @default(uuid())
+  applicationId String
+  application   Application @relation(fields: [applicationId], references: [id], onDelete: Cascade)
+  date          DateTime    @default(now())
+  status        String
+  description   String?
+  createdAt     DateTime    @default(now())
+}
+
+model Document {
+  id            String      @id @default(uuid())
+  applicationId String
+  application   Application @relation(fields: [applicationId], references: [id], onDelete: Cascade)
+  filename      String
+  filepath      String
+  mimeType      String
+  sizeBytes     Int
+  uploadedAt    DateTime    @default(now())
+}
+
+model Note {
+  id            String      @id @default(uuid())
+  applicationId String
+  application   Application @relation(fields: [applicationId], references: [id], onDelete: Cascade)
+  content       String
+  tags          String?     // JSON array stored as string
+  createdAt     DateTime    @default(now())
+  updatedAt     DateTime    @updatedAt
+}
