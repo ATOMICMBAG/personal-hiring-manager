@@ -1,4 +1,4 @@
-# 📋 maazi.de | Personal Hiring Manager
+# maazi.de | Personal Hiring Manager
 
 **Local. Datenschutz-first. Kostenlos.**
 
@@ -13,38 +13,38 @@ Eine Desktop-Anwendung zur Verfolgung von Bewerbungen, die strukturiert und durc
 
 ---
 
-## **Warum maazi.de | Personal Hiring Manager?**
+## **Warum ein Personal Hiring Manager?**
 
 Jobsuche bedeutet, Dutzende von Unternehmen, Kontakten, Dokumenten und Statusänderungen im Blick zu behalten. Tabellenkalkulationen werden schnell unübersichtlich, Cloud-Dienste werfen Datenschutzbedenken auf, und die meisten ATS-Tools sind für Recruiter – nicht für Sie.
 
 **PHM** gibt Ihnen die Kontrolle:
 
-- ✅ **100 % lokal** – Ihre Daten bleiben auf Ihrem Computer. Keine Konten, keine Cloud, keine Telemetrie.
-- ✅ **Ein-Screen-Workflow** – 3‑Panel‑Layout (Unternehmen · Bewerbungsdetail · Erkenntnisse) – alles auf einen Blick.
-- ✅ **Resizable & collapsible sidebars** – Ziehe die Kanten, um die Breite anzupassen, klicken Sie, um Seitenleisten einzublenden/ausblenden. Höhen der einzelnen Abschnitte im rechten Panel sind unabhängig einstellbar und werden in `localStorage` gespeichert.
-- ✅ **Visuelle Timeline** – Sehe exakt, wo jede Bewerbung steht, mit farblich kodierten Statusen.
-- ✅ **Dokumente: hochladen · öffnen · herunterladen · löschen** – Dateien in jede Bewerbung, leichter Überblick der Wichtigen Punkte (PDFs im Browser) oder lade mit einem Klick herunter.
-- ✅ **Markdown‑Notizen** – Halte Anrufprotokolle, Vorbereitungsnotizen und Follow‑up‑Erinnerungen mit Tag‑Support.
-- ✅ **Bewerbungsradar** – Ein Mini‑Gantt‑Diagramm zeigt alle aktiven Bewerbungen auf einen Blick.
-- ✅ **JSON Exporte** – Strukturiertes JSON oder exportiere die Daten für Analysen.
-- ✅ **Open Source (MIT)** – Verwende es, teile es, modifiziere es.
+- **100 % lokal** – Ihre Daten bleiben auf Ihrem Computer. Keine Konten, keine Cloud, keine Telemetrie.
+- **Ein-Screen-Workflow** – 3‑Panel‑Layout (Unternehmen · Bewerbungsdetail · Erkenntnisse) – alles auf einen Blick.
+- **Resizable & collapsible sidebars** – Ziehe die Kanten, um die Breite anzupassen, klicken Sie, um Seitenleisten einzublenden/ausblenden. Höhen der einzelnen Abschnitte im rechten Panel sind unabhängig einstellbar und werden in `localStorage` gespeichert.
+- **Visuelle Timeline** – Sehe exakt, wo jede Bewerbung steht, mit farblich kodierten Statusen.
+- **Dokumente: hochladen · öffnen · herunterladen · löschen** – Dateien in jede Bewerbung, leichter Überblick der Wichtigen Punkte (PDFs im Browser) oder lade mit einem Klick herunter.
+- **Markdown‑Notizen** – Halte Anrufprotokolle, Vorbereitungsnotizen und Follow‑up‑Erinnerungen mit Tag‑Support.
+- **Bewerbungsradar** – Ein Mini‑Gantt‑Diagramm zeigt alle aktiven Bewerbungen auf einen Blick.
+- **JSON Exporte** – Strukturiertes JSON oder exportiere die Daten für Analysen.
+- **Open Source (MIT)** – Verwende es, teile es, modifiziere es.
 
 ---
 
-## 🖥️ Oberfläche
+## User Interface
 
 ![pic](pic1.png)
-[![▶️ Video ansehen](Personal-Hiring-Manager.mp4)](Personal-Hiring-Manager.mp4)
+[![▶️ Video](Personal-Hiring-Manager.mp4)](Personal-Hiring-Manager.mp4)
 
 ```
 ┌── Left Sidebar (resizable) ──┐ ┌── Application Detail ──────────┐ ┌── Right Tools (resizable) ───┐
-│ 🔍 Search & Filter           │ │                  Siemens AG    │ │ 📊 Motivation Score         │
-│                              │ │           🏢 Software Engineer │ │ ⌄ ───────────────────────── │
-│ 🏢 Companies (grouped)       │ │           📍 Armon Torfom      │ │ 📡 Bewerbungsradar          │
-│   ⌄ Siemens AG (3)           │ │           ✉  atorf@siemens.de │ │   coloured time bars         │
-│     🔵 Software Engineer ⬤  │ │                ╭─ In Bearb. ─╮ │ │ ⌄ ────────────────────────── │
-│     🟡 Systems Engineer  ⬤  │ │                ╰─────────────╯ │ │ 🔗 Quicklinks               │
-│   ⌄ Rohde & Schwarz (1)      │ │                          🗑     │ │ ⌄ ────────────────────────── │
+│ 🔍 Search & Filter           │ │             Measure Tech AG    │ │ 📊 Motivation Score         │
+│                              │ │           🏢 Software Tester   │ │ ⌄ ───────────────────────── │
+│ 🏢 Companies (grouped)       │ │           📍 Armon Torfom     │ │ 📡 Bewerbungsradar          │
+│   ⌄ Measure Tech (3)         │ │           ✉  atorf@siemens.de │ │   coloured time bars         │
+│     🔵 Software Tech     ⬤  │ │                ╭─ In Bearb. ─╮ │ │ ⌄ ────────────────────────── │
+│     🟡 Systems Tech      ⬤  │ │                ╰─────────────╯ │ │ 🔗 Quicklinks               │
+│   ⌄ Maier & co.     (1)      │ │                          🗑     │ │ ⌄ ────────────────────────── │
 │     🟢 RF Technician     ⬤  │ │ Timeline │ Dokumente │ Notizen │ | 📤 Export JSON ·            │
 │                              │ │                                │ │ ⌄ ────────────────────────── │
 │ Right-click → Rename / Delete│ │ ● 05.05.2026  Bewerbung gesend.│ │                              │
