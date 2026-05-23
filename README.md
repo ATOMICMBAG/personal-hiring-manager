@@ -175,7 +175,7 @@ prisma/
 
 ## Exportiere JSON für weiter Verarbeitung oder z.B. direkt im Webbrowser-Edge Copilot‑Interaktion
 
-**Exportiere als JSON** für weitere **lokale und sichere** Personelle Analyse. Die App ist zusätzlich für die Nutzung im **Webbrowser Edge mit Copilot** konzipiert. Nutze die Webbrowser lese funktion fon Copilot Edge!
+**Exportiere als JSON** für weitere **lokale und sichere** Personelle Analyse. Die App ist zusätzlich für die Nutzung im **Webbrowser Edge mit Copilot** konzipiert. Nutze die Copilot Edge Webbrowser lese funktion!
 
 - Klicke auf **„Exportiere JSON“**, um dieselben Daten als Datei herunterzuladen.
 - Frage dein Edge Copilot im Webbrowser direkt an deiner Liste oder Unternehmens Akte. z.B.:
